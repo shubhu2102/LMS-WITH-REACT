@@ -1,0 +1,95 @@
+
+  .quiz-container {
+
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  
+  /* Card styles */
+  .quiz-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    width: 500px;
+    transition: transform 0.3s ease;
+  }
+  
+  .quiz-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Question styles */
+  .question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  /* Options styles */
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .option:hover {
+    background-color: #e8f0fe;
+  }
+  
+  .option input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
+  .option label {
+    flex-grow: 1;
+    cursor: pointer;
+  }
+  
+  /* Submit button styles */
+  .submit-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .quiz-container {
+      padding: 1rem;
+    }
+    
+    .quiz-card {
+      padding: 1rem;
+    }
+    
+    .question {
+      font-size: 1rem;
+    }
+  }
